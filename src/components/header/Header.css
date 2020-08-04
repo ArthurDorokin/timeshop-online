@@ -1,0 +1,63 @@
+.header {
+    background: #fafa63;
+    padding: 20px 0 0 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.header .container .logo img {
+    width: 250px;
+}
+.header .container .wrap {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+}
+.header .navigation ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.header ul li a {
+    font-weight: 700;
+}
+
+.header .basket ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+}
+.header .basket ul li:nth-of-type(2) {
+    margin: 4px 0 0 0;
+    font-weight: 700;
+}
+.header .basket {
+    width: 10%;
+}
+.header .basket .img {
+    position: relative;
+}
+.header .basket .count-num {
+    position: absolute;
+    font-size: 16px;
+    color: #fafa63;
+    font-weight: 700;
+    top: 14px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .basket .img img {
+    width: 30px;
+}
