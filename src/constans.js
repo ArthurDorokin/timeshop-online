@@ -1,0 +1,111 @@
+const catalog = [
+    {
+        id: 0,
+        link: "/",
+        img: "/img/content/smart-chasy-huawei-watch-gt-classic-22011108568480_small4.jpg",
+        alt: "Смарт часы",
+        description: "Смарт-часы HUAWEI Watch GT Classic",
+        price: "7584",
+        priceSumBasket: 7584,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        typeProduct: 1
+    },
+    {
+        id: 1,
+        link: "/",
+        img: "/img/content/14526064820256_small4.jpeg",
+        alt: "Детские Водонепроницаемые",
+        description: "Детские Водонепроницаемые Умные Часы с gps Smart baby",
+        price: "999",
+        priceSumBasket: 999,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        typeProduct: 1
+    },
+    {
+        id: 2,
+        link: "/",
+        img: "/img/content/20253397472557_small4.jpeg",
+        alt: "Электросамокат",
+        description: "Смарт-часы XIAOMI Amazfit Verge Blue",
+        price: "3599",
+        priceSumBasket: 3599,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        typeProduct: 1
+    },
+    {
+        id: 3,
+        link: "/",
+        img: "/img/content/48272048070578_small4.jpeg",
+        alt: "Смарт-часы",
+        description: "Смарт-часы GARMIN Forerunner 235",
+        price: "7584",
+        priceSumBasket: 7584,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        typeProduct: 1
+    },
+    {
+        id: 4,
+        link: "/",
+        img: "/img/content/62428467162146_small4.jpeg",
+        alt: "Samsung Galaxy",
+        description: "Смарт-часы Samsung Galaxy Watch 46мм Silver",
+        price: "9499",
+        priceSumBasket: 9499,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        typeProduct: 1
+    },
+    {
+        id: 5,
+        link: "/",
+        img: "/img/content/68354208744341_small4.jpeg",
+        alt: "Смарт-часы",
+        description: "Смарт-часы SAMSUNG Galaxy Watch Active 2 40mm",
+        price: "8999",
+        priceSumBasket: 8999,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        typeProduct: 1
+    },
+    {
+        id: 6,
+        link: "/",
+        img: "/img/content/86840362163261_small4.jpeg",
+        alt: "Смарт-часы ",
+        description: "Смарт-часы APPLE Watch Series 4 40mm Gold Aluminium with",
+        price: "12999",
+        priceSumBasket: 12999,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        typeProduct: 1
+    }
+]
+
+export {
+    catalog
+}
