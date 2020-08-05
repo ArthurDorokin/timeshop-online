@@ -7,17 +7,15 @@ import BannerSmall from "../banner-group/banner-small";
 class Layout extends Component {
     render() {
         return (
-            <div>
-                <main>
-                    <Header/>
-                    <div className="bannerAll">
-                        <BannerBig/>
-                        <BannerSmall/>
-                    </div>
-                    {this.props.children}
-                    <Footer/>
-                </main>
-            </div>
+            <main className={`${window.location.href !== 'http://localhost:3000/' ? "home-page" : ""}`}>
+                <Header/>
+                <div className="bannerAll">
+                    <BannerBig/>
+                    <BannerSmall/>
+                </div>
+                {this.props.children}
+                <Footer/>
+            </main>
         )
     }
 }

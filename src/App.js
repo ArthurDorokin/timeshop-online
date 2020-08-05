@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import './App.css';
+import {Switch, Route} from "react-router-dom";
+
 import Layout from "./components/layout/Layout";
 import Home from "./components/layout/Home";
-
+import NotFound from "./components/not-found/NotFound";
 import {catalog} from "../src/constans";
 
 class App extends Component {
@@ -11,7 +13,11 @@ class App extends Component {
     render() {
         return (
             <Layout>
-                <Home catalog={this.state.catalog}/>
+                <Switch>
+                    <Route exact path="/" render={(props) => <Home catalog={this.state.catalog} />}/>
+                    {/*404*/}
+                    <Route path='*' exact={true} component={NotFound}/>
+                </Switch>
             </Layout>
         );
     }
