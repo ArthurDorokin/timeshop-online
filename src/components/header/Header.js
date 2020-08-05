@@ -8,7 +8,7 @@ class Header extends Component {
                 <div className="container">
                     <div className="wrap">
                         <div className="logo">
-                            <img src="../img/25529133563025_small2.jpg" alt=""/>
+                            <a href="/"><img src="../img/25529133563025_small2.jpg" alt=""/></a>
                         </div>
                         <div className="navigation">
                             <ul>

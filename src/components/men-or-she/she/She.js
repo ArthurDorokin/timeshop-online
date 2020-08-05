@@ -1,16 +1,11 @@
-import React, {Component} from "react";
-import './She.css'
+import React from "react";
 
-class She extends Component {
-    render() {
-        return (
-            <div className="she">
-                <div className="container">
-                    <p>she</p>
-                </div>
-            </div>
-        )
-    }
-};
-
-export default She
+export const She = () => {
+    return (
+        <div className="she">
+            <a href="/zhenskie/">
+                <img src="/img/content/24354968450836.jpg"/>
+            </a>
+        </div>
+    )
+}

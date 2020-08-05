@@ -1,16 +1,11 @@
-import React, {Component} from "react";
-import './Men.css'
+import React from "react";
 
-class Men extends Component {
-    render() {
-        return (
-            <div className="men">
-                <div className="container">
-                    <p>men</p>
-                </div>
-            </div>
-        )
-    }
-};
-
-export default Men
+export const Men = () => {
+    return (
+        <div className="men">
+            <a href="/muzhskie/">
+                <img src="/img/content/72776610671634.jpg"/>
+            </a>
+        </div>
+    )
+}

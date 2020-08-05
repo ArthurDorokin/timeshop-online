@@ -1,0 +1,28 @@
+.wrap-menOrShe {
+    margin: 0 0 55px 0;
+}
+
+.wrap-menOrShe .container {
+    display: flex;
+    align-items: center;
+}
+
+.wrap-menOrShe .men {
+    transform: translate(0, 0);
+    transition: .5s;
+}
+
+.wrap-menOrShe .men:hover {
+    transform: translate(0, -20px);
+    transition: .5s;
+}
+
+.wrap-menOrShe .she {
+    transform: translate(0, 0);
+    transition: .5s;
+}
+
+.wrap-menOrShe .she:hover {
+    transform: translate(0, -20px);
+    transition: .5s;
+}

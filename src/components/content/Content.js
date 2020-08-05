@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import './Content.css'
 import {Hit} from "./hit/Hit";
 import {New} from "./new/New";
+import MenOrShe from "../men-or-she";
+import AboutCompany from "../aboutCompany";
 
 class Content extends Component {
     render() {
@@ -16,13 +18,16 @@ class Content extends Component {
                             <Hit catalog={this.props.catalog}/>
                         </div>
                     </div>
-                    <div className="wrap-men-or-she"></div>
+                    <div className="wrap-men-or-she">
+                        <MenOrShe />
+                    </div>
                     <div className="wrap-new">
                         <h2>Новинки</h2>
                         <div className="blocks-hit">
                             <New catalog={this.props.catalog}/>
                         </div>
                     </div>
+                    <AboutCompany/>
                 </div>
             </div>
         )
