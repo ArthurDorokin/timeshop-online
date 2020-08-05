@@ -11,7 +11,7 @@ const catalog = [
         idBasket: false,
         buy: "Купить",
         inBasket: "В корзине",
-        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        filterIcon: {name: "Хит", classFilter: "hit", val: 0},
         typeProduct: 1
     },
     {
@@ -26,7 +26,7 @@ const catalog = [
         idBasket: false,
         buy: "Купить",
         inBasket: "В корзине",
-        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        filterIcon: {name: "Хит", classFilter: "hit", val: 0},
         typeProduct: 1
     },
     {
@@ -41,7 +41,7 @@ const catalog = [
         idBasket: false,
         buy: "Купить",
         inBasket: "В корзине",
-        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        filterIcon: {name: "Хит", classFilter: "hit", val: 0},
         typeProduct: 1
     },
     {
@@ -56,7 +56,7 @@ const catalog = [
         idBasket: false,
         buy: "Купить",
         inBasket: "В корзине",
-        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        filterIcon: {name: "Хит", classFilter: "hit", val: 0},
         typeProduct: 1
     },
     {
@@ -71,7 +71,7 @@ const catalog = [
         idBasket: false,
         buy: "Купить",
         inBasket: "В корзине",
-        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        filterIcon: {name: "Хит", classFilter: "hit", val: 0},
         typeProduct: 1
     },
     {
@@ -86,7 +86,7 @@ const catalog = [
         idBasket: false,
         buy: "Купить",
         inBasket: "В корзине",
-        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        filterIcon: {name: "Хит", classFilter: "hit", val: 0},
         typeProduct: 1
     },
     {
@@ -101,9 +101,102 @@ const catalog = [
         idBasket: false,
         buy: "Купить",
         inBasket: "В корзине",
-        filterIcon: {name: "Новинка", classFilter: "new", val: 0},
+        filterIcon: {name: "Хит", classFilter: "hit", val: 0},
         typeProduct: 1
-    }
+    },
+
+
+
+    {
+        id: 7,
+        link: "/",
+        img: "/img/content/36ec8e76800f50abc14643684a5f1624.jpg",
+        alt: "Смарт часы",
+        description: "Смарт-часы SAMSUNG Galaxy Watch 46mm Silver (SM-R800NZSA)",
+        price: "6999",
+        priceSumBasket: 6999,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        typeProduct: 1
+    },
+    {
+        id: 8,
+        link: "/",
+        img: "/img/content/diesel_diesel-dz1657_-erkek-kol-saati_119269.jpg",
+        alt: "Смарт часы",
+        description: "Diesel - Часы DZ4318",
+        price: "5799",
+        priceSumBasket: 5799,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        typeProduct: 1
+    },
+    {
+        id: 9,
+        link: "/",
+        img: "/img/content/dz4375_1_.jpg",
+        alt: "Смарт часы",
+        description: "ЧАСЫ DIESEL DZ4503",
+        price: "4644",
+        priceSumBasket: 4644,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        typeProduct: 1
+    },
+    {
+        id: 10,
+        link: "/",
+        img: "/img/content/large_img_1621229.jpg",
+        alt: "Смарт-часы",
+        description: "ARMANI EXCHANGE - ЧАСЫ AX2805",
+        price: "4199",
+        priceSumBasket: 4199,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        typeProduct: 1
+    },
+    {
+        id: 11,
+        link: "/",
+        img: "/img/content/pierre_lannier_225d466_images_15903069939.jpg",
+        alt: "Смарт-часы",
+        description: "Мужские часы PIERRE LANNIER 225D466",
+        price: "4798",
+        priceSumBasket: 4798,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        typeProduct: 1
+    },
+    {
+        id: 12,
+        link: "/",
+        img: "/img/content/8381500_images_1612801495.jpg",
+        alt: "Смарт-часы",
+        description: "Casio Original G-Shock GA100-1A1ER",
+        price: "2828",
+        priceSumBasket: 2828,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        typeProduct: 1
+    },
 ]
 
 export {
