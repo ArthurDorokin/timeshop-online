@@ -5,9 +5,11 @@ import BannerBig from "../banner-group/banner-big";
 import BannerSmall from "../banner-group/banner-small";
 
 class Layout extends Component {
+
     render() {
+        const {offBanner} = this.props
         return (
-            <main className={`${window.location.href !== 'http://localhost:3000/' ? "home-page" : ""}`}>
+            <main className={`${offBanner === true ? "off-banner" : ""}`}>
                 <Header/>
                 <div className="bannerAll">
                     <BannerBig/>

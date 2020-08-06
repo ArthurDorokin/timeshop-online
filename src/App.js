@@ -8,15 +8,31 @@ import NotFound from "./components/not-found/NotFound";
 import {catalog} from "../src/constans";
 
 class App extends Component {
-    state = {catalog}
+    state = {
+        catalog,
+        offBanner: false
+    }
+
+    onChildDidMount = () => {
+        if (true) {
+            const offBanner = this.state.offBanner;
+            this.setState({
+                offBanner: !offBanner
+            })
+        }
+    };
 
     render() {
         return (
-            <Layout>
+            <Layout
+                offBanner={this.state.offBanner}
+            >
                 <Switch>
-                    <Route exact path="/" render={(props) => <Home catalog={this.state.catalog} />}/>
+                    <Route exact path="/" render={(props) => <Home
+                        catalog={this.state.catalog}
+                    />}/>
                     {/*404*/}
-                    <Route path='*' exact={true} component={NotFound}/>
+                    <Route exact path='*' render={(props) => <NotFound callback={this.onChildDidMount}/>}/>
                 </Switch>
             </Layout>
         );

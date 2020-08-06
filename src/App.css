@@ -4,6 +4,10 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
+.off-banner .bannerAll {
+    display: none;
+}
+
 body .container {
     width: 1425px;
     margin: 0 auto;

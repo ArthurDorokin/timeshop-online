@@ -1,0 +1,49 @@
+.notFound {
+    height: 745px;
+    display: flex;
+    align-items: center;
+}
+.notFound .border-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.notFound .border-wrap > div{
+    border: 2px solid #27b5f9;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.notFound .border-wrap > div p{
+    font-size: 150px;
+}
+.notFound .border-wrap img{
+    width: 250px;
+}
+.notFound .border-wrap .error-s {
+    position: absolute;
+    color: #27b5f9;
+    font-weight: 700;
+    background: #ffffff;
+    top: -13px;
+    left: 25px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+.off-banner .footer {
+    margin: 0;
+}
+.notFound .border-wrap .not-found-text {
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
