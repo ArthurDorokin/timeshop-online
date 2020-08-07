@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {NavLink} from "react-router-dom";
 import './Footer.css'
 
 class Footer extends Component {
@@ -7,24 +8,24 @@ class Footer extends Component {
             <div className="footer">
                 <div className="container">
                     <div className="img-logo">
-                        <a href="/"><img src="../img/25529133563025_small2.jpg" alt=""/></a>
+                        <NavLink to="/"><img src="../img/25529133563025_small2.jpg" alt=""/></NavLink>
                     </div>
                     <div className="footer-nav">
                         <div className="catalog">
                             <ul>
                                 <li>Каталог</li>
-                                <li><a href="/">Мужские</a></li>
-                                <li><a href="/">Женские</a></li>
-                                <li><a href="/">Детские</a></li>
+                                <li><NavLink to="/">Мужские</NavLink></li>
+                                <li><NavLink to="/">Женские</NavLink></li>
+                                <li><NavLink to="/">Детские</NavLink></li>
                             </ul>
                         </div>
                         <div className="contact">
                             <ul>
                                 <li>Клиентам</li>
-                                <li><a href="/">044 000-00-00</a></li>
-                                <li><a href="/">090 000-00-00</a></li>
-                                <li><a href="/">test@test.com</a></li>
-                                <li><a href="/">Киев</a></li>
+                                <li><NavLink to="/">044 000-00-00</NavLink></li>
+                                <li><NavLink to="/">090 000-00-00</NavLink></li>
+                                <li><NavLink to="/">test@test.com</NavLink></li>
+                                <li><NavLink to="/">Киев</NavLink></li>
                             </ul>
                         </div>
                     </div>

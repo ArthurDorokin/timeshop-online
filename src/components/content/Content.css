@@ -93,6 +93,13 @@
 .slick-prev.slick-disabled:after, .slick-next.slick-disabled:after {
     opacity: .25;
 }
+.content .hit-item .hit-blocks a,
+.content .new-item .new-blocks a{
+    height: 100%;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}
 
 .content .hit-item .hit-blocks,
 .content .new-item .new-blocks {

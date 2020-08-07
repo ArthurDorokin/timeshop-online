@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom"
 import Slider from "react-slick";
 
 export const Hit = ({catalog}) => {
@@ -15,10 +16,12 @@ export const Hit = ({catalog}) => {
             {catalog.filter((item) => item.filterIcon.val === 0).map((item) =>
                 <div className="hit-item" key={item.id}>
                     <div className="hit-blocks">
-                        <img src={item.img} alt={item.alt}/>
-                        <span className="flag-hit">{item.filterIcon.name}</span>
-                        <p className="description">{item.description}</p>
-                        <p className="price">{item.price} грн</p>
+                        <NavLink to={item.link}>
+                            <img src={item.img} alt={item.alt}/>
+                            <span className="flag-hit">{item.filterIcon.name}</span>
+                            <p className="description">{item.description}</p>
+                            <p className="price">{item.price} грн</p>
+                        </NavLink>
                     </div>
                     <div className="btn-price">{item.buy}</div>
                 </div>

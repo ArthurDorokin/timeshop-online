@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import {NavLink} from "react-router-dom";
 
 export const New = ({catalog}) => {
     const settings = {
@@ -15,10 +16,12 @@ export const New = ({catalog}) => {
             {catalog.filter((item) => item.filterIcon.val === 1).map((item) =>
                 <div className="new-item" key={item.id}>
                     <div className="new-blocks">
-                        <img src={item.img} alt={item.alt}/>
-                        <span className="flag-new">{item.filterIcon.name}</span>
-                        <p className="description">{item.description}</p>
-                        <p className="price">{item.price} грн</p>
+                        <NavLink to={item.link}>
+                            <img src={item.img} alt={item.alt}/>
+                            <span className="flag-new">{item.filterIcon.name}</span>
+                            <p className="description">{item.description}</p>
+                            <p className="price">{item.price} грн</p>
+                        </NavLink>
                     </div>
                     <div className="btn-price">{item.buy}</div>
                 </div>

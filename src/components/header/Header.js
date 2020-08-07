@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {NavLink} from "react-router-dom";
 import './Header.css'
 
 class Header extends Component {
@@ -8,14 +9,14 @@ class Header extends Component {
                 <div className="container">
                     <div className="wrap">
                         <div className="logo">
-                            <a href="/"><img src="../img/25529133563025_small2.jpg" alt=""/></a>
+                            <NavLink to="/"><img src="../img/25529133563025_small2.jpg" alt=""/></NavLink>
                         </div>
                         <div className="navigation">
                             <ul>
-                                <li><a href="#!">Мужские</a></li>
-                                <li><a href="#!">Женские</a></li>
-                                <li><a href="#!">Детские</a></li>
-                                <li><a href="#!">Аксессуары</a></li>
+                                <li><NavLink to="#!">Мужские</NavLink></li>
+                                <li><NavLink to="#!">Женские</NavLink></li>
+                                <li><NavLink to="#!">Детские</NavLink></li>
+                                <li><NavLink to="#!">Аксессуары</NavLink></li>
                             </ul>
                         </div>
                     </div>
