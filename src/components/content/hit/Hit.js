@@ -12,6 +12,7 @@ export const Hit = ({catalog}) => {
     }
 
     return (
+
         <Slider {...settings}>
             {catalog.filter((item) => item.filterIcon.val === 0).map((item) =>
                 <div className="hit-item" key={item.id}>

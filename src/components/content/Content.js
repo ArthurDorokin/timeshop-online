@@ -6,6 +6,7 @@ import {Hit} from "./hit/Hit";
 import {New} from "./new/New";
 import MenOrShe from "../men-or-she";
 import AboutCompany from "../aboutCompany";
+import StoreContext from "../../StoreContext";
 
 class Content extends Component {
     render() {
@@ -15,16 +16,20 @@ class Content extends Component {
                     <div className="wrap-hit">
                         <h2>Хиты продаж</h2>
                         <div className="blocks-hit">
-                            <Hit catalog={this.props.catalog}/>
+                            <StoreContext.Consumer>
+                                {(catalog) => (<Hit catalog={catalog}/>)}
+                            </StoreContext.Consumer>
                         </div>
                     </div>
                     <div className="wrap-men-or-she">
-                        <MenOrShe />
+                        <MenOrShe/>
                     </div>
                     <div className="wrap-new">
                         <h2>Новинки</h2>
                         <div className="blocks-hit">
-                            <New catalog={this.props.catalog}/>
+                            <StoreContext.Consumer>
+                                {(catalog) => (<New catalog={catalog}/>)}
+                            </StoreContext.Consumer>
                         </div>
                     </div>
                     <AboutCompany/>

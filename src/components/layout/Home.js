@@ -5,7 +5,7 @@ class Home extends Component {
     render() {
         return (
             <div className="home">
-                <Content catalog={this.props.catalog}/>
+                <Content/>
             </div>
         )
     }
