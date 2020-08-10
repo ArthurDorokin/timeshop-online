@@ -27,7 +27,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Хит", classFilter: "hit", val: 0},
-        typeProduct: 1
+        typeProduct: 2
     },
     {
         id: 2,
@@ -87,7 +87,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Хит", classFilter: "hit", val: 0},
-        typeProduct: 1
+        typeProduct: 0
     },
     {
         id: 6,
@@ -102,7 +102,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Хит", classFilter: "hit", val: 0},
-        typeProduct: 1
+        typeProduct: 0
     },
 
 
@@ -196,6 +196,36 @@ const catalog = [
         inBasket: "В корзине",
         filterIcon: {name: "Новинка", classFilter: "new", val: 1},
         typeProduct: 1
+    },
+    {
+        id: 13,
+        link: "/",
+        img: "/img/content/66786156357148_small4.jpeg",
+        alt: "Браслет",
+        description: "Миланский сетчатый ремешок для часов Fitbit Blaze - Black",
+        price: "599",
+        priceSumBasket: 599,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Хит", classFilter: "hit", val: 0},
+        typeProduct: 3
+    },
+    {
+        id: 14,
+        link: "/",
+        img: "/img/content/66786156357148_small4.jpeg",
+        alt: "Браслет",
+        description: "Миланский сетчатый ремешок для часов Fitbit Blaze - Silver",
+        price: "499",
+        priceSumBasket: 499,
+        counterBasket: 1,
+        idBasket: false,
+        buy: "Купить",
+        inBasket: "В корзине",
+        filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        typeProduct: 3
     },
 ]
 
