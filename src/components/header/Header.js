@@ -13,10 +13,10 @@ class Header extends Component {
                         </div>
                         <div className="navigation">
                             <ul>
-                                <li><NavLink to="#!">Мужские</NavLink></li>
-                                <li><NavLink to="#!">Женские</NavLink></li>
-                                <li><NavLink to="#!">Детские</NavLink></li>
-                                <li><NavLink to="#!">Аксессуары</NavLink></li>
+                                <li><NavLink to="/muzhskie">Мужские</NavLink></li>
+                                <li><NavLink to="/zhenskie">Женские</NavLink></li>
+                                <li><NavLink to="/detskie">Детские</NavLink></li>
+                                <li><NavLink to="/aksessuary">Аксессуары</NavLink></li>
                             </ul>
                         </div>
                     </div>

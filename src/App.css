@@ -4,7 +4,7 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
-.off-banner .bannerAll {
+.bannerAll.off-banner  {
     display: none;
 }
 
