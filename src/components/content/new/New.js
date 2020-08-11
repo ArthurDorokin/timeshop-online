@@ -14,8 +14,8 @@ export const New = ({catalog}) => {
     return (
         <Slider {...settings}>
             {catalog.filter((item) => item.filterIcon.val === 1).map((item) =>
-                <div className="new-item" key={item.id}>
-                    <div className="new-blocks">
+                <div className="new-item internal-card-item" key={item.id}>
+                    <div className="new-blocks _card-item">
                         <NavLink to={item.link}>
                             <img src={item.img} alt={item.alt}/>
                             <span className="flag-new">{item.filterIcon.name}</span>

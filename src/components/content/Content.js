@@ -13,9 +13,9 @@ class Content extends Component {
         return (
             <div className="content">
                 <div className="container">
-                    <div className="wrap-hit">
+                    <div className="wrap-hit wrap-internal-card">
                         <h2>Хиты продаж</h2>
-                        <div className="blocks-hit">
+                        <div className="blocks-hit blocks-internal-card">
                             <StoreContext.Consumer>
                                 {(catalog) => (<Hit catalog={catalog}/>)}
                             </StoreContext.Consumer>
@@ -24,9 +24,9 @@ class Content extends Component {
                     <div className="wrap-men-or-she">
                         <MenOrShe/>
                     </div>
-                    <div className="wrap-new">
+                    <div className="wrap-new wrap-internal-card">
                         <h2>Новинки</h2>
-                        <div className="blocks-hit">
+                        <div className="blocks-new blocks-internal-card">
                             <StoreContext.Consumer>
                                 {(catalog) => (<New catalog={catalog}/>)}
                             </StoreContext.Consumer>

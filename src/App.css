@@ -4,7 +4,7 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
-.bannerAll.off-banner  {
+.bannerAll.off-banner {
     display: none;
 }
 
@@ -45,7 +45,7 @@ ul li a {
     text-align: center;
 }
 
-.aboutCompany p{
+.aboutCompany p {
     width: 75%;
     margin: 10px auto 10px auto;
     line-height: 25px;
@@ -53,3 +53,36 @@ ul li a {
 }
 
 
+/*card item*/
+.content.in .blocks-internal-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content.in .blocks-internal-card {
+    height: auto;
+}
+.content.in .wrap-internal-card .internal-card-item .btn-price {
+    opacity: 1;
+    transition-delay: .1s;
+    bottom: 20px;
+    right: 20px;
+}
+.content.in .internal-card-item:hover {
+    padding: 20px 15px;
+}
+.content.in .internal-card-item .description {
+    height: 54px;
+}
+.content.in .flag {
+    color: #ffffff;
+    padding: 5px;
+    font-size: 13px;
+    background: burlywood;
+    left: 0;
+    top: 300px;
+    height: 13px;
+    position: absolute;
+}
+/*card item*/

@@ -15,8 +15,8 @@ export const Hit = ({catalog}) => {
 
         <Slider {...settings}>
             {catalog.filter((item) => item.filterIcon.val === 0).map((item) =>
-                <div className="hit-item" key={item.id}>
-                    <div className="hit-blocks">
+                <div className="hit-item internal-card-item" key={item.id}>
+                    <div className="hit-blocks _card-item">
                         <NavLink to={item.link}>
                             <img src={item.img} alt={item.alt}/>
                             <span className="flag-hit">{item.filterIcon.name}</span>
