@@ -10,6 +10,7 @@ import Muzhskie from "./components/pages/men";
 import Zhenskie from "./components/pages/women";
 import Detskie from "./components/pages/children";
 import Aksessuary from "./components/pages/accessories";
+import Catalog from "./components/pages/catalog";
 
 class App extends Component {
     state = {
@@ -26,7 +27,6 @@ class App extends Component {
     };
 
     render() {
-        console.log(window.location.href)
         return (
             <Layout
                 offBanner={this.state.offBanner}
@@ -38,6 +38,7 @@ class App extends Component {
                     <Route exact path="/zhenskie" render={(props) => <Zhenskie/> }/>
                     <Route exact path="/detskie" render={(props) => <Detskie/> }/>
                     <Route exact path="/aksessuary" render={(props) => <Aksessuary/> }/>
+                    <Route exact path="/catalog" render={(props) => <Catalog/> }/>
                     {/*404*/}
                     <Route exact path='*' render={(props) => <NotFound callback={this.onChildDidMount}/>}/>
                 </Switch>

@@ -52,6 +52,19 @@ ul li a {
     font-size: 14px;
 }
 
+.content.in .wrap-internal-card .container {
+    display: flex;
+    align-items: center;
+}
+
+.filter .icon {
+    width: 150px;
+    margin: 0 20px 0 20px;
+}
+
+.filter .brand {
+    width: 150px;
+}
 
 /*card item*/
 .content.in .blocks-internal-card{

@@ -14,9 +14,10 @@ class Footer extends Component {
                         <div className="catalog">
                             <ul>
                                 <li>Каталог</li>
-                                <li><NavLink to="/">Мужские</NavLink></li>
-                                <li><NavLink to="/">Женские</NavLink></li>
-                                <li><NavLink to="/">Детские</NavLink></li>
+                                <li><NavLink to="/muzhskie">Мужские</NavLink></li>
+                                <li><NavLink to="/zhenskie">Женские</NavLink></li>
+                                <li><NavLink to="/detskie">Детские</NavLink></li>
+                                <li><NavLink to="/aksessuary">Аксессуары</NavLink></li>
                             </ul>
                         </div>
                         <div className="contact">

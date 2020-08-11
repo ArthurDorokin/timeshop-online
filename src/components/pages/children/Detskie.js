@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import './Detskie.css'
 import StoreContext from "../../../StoreContext";
 import {NavLink} from "react-router-dom";
+import Filter from "../filter";
 
 class Detskie extends Component {
     render() {
@@ -12,6 +13,7 @@ class Detskie extends Component {
                         <h1>Мужские</h1>
                         <img src="../img/detskie.jpg" alt="detskie"/>
                         <div className="wrap-detskie wrap-internal-card">
+                            <Filter/>
                             <div className="blocks-detskie blocks-internal-card">
                                 <StoreContext.Consumer>
                                     {(catalog) => (

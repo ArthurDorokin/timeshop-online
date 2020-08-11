@@ -99,6 +99,7 @@
     display: block;
     color: #000000;
     text-decoration: none;
+    outline: 0;
 }
 
 .content .internal-card-item ._card-item {
