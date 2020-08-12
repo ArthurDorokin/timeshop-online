@@ -1,48 +1,108 @@
 import React, {Component} from "react";
 import Select from "react-select";
+import {catalog} from "../../../constans";
 
-const icon = [
-    {value: 0, label: "Новинка"},
-    {value: 1, label: "Хит"},
-    {value: 2, label: 'Иконки'}
-];
 const brand = [
     {value: 0, label: "Samsung"},
     {value: 1, label: "Huawei"},
     {value: 2, label: 'Garmin'},
-    {value: 3, label: 'Бренд'}
+    {value: 3, label: 'Apple'},
+    {value: 4, label: 'Diesel'},
+    {value: 5, label: 'Casio'},
+    {value: 6, label: 'Fitbit'},
+    {value: 7, label: 'Armani'},
+    {value: 8, label: 'Xiaomi'},
+    {value: 9, label: 'Smart'},
+    {value: 10, label: 'Бренд'}
 ];
 
 class Filter extends Component {
     state = {
-
-    };
-
-    handleChangeIcon = selectedOptionIcon => {
-        this.setState({ selectedOptionIcon });
-    };
+        default: {
+            catalog
+        },
+        catalog
+    }
 
     handleChangeBrend = selectedOptionBrend => {
-        this.setState({ selectedOptionBrend });
+        this.setState({catalog});
+        if (selectedOptionBrend.value === 0) {
+            const byFilterBrend = this.state.default.catalog;
+            const sortFilterBrend = byFilterBrend.filter((item) => item.brand.val === 0);
+            this.setState({catalog: sortFilterBrend});
+            this.props.handleChangeBrend(sortFilterBrend)
+        }
+        if (selectedOptionBrend.value === 1) {
+            const byFilterBrend = this.state.default.catalog;
+            const sortFilterBrend = byFilterBrend.filter((item) => item.brand.val === 1);
+            this.setState({catalog: sortFilterBrend});
+            this.props.handleChangeBrend(sortFilterBrend)
+        }
+        if (selectedOptionBrend.value === 2) {
+            const byFilterBrend = this.state.default.catalog;
+            const sortFilterBrend = byFilterBrend.filter((item) => item.brand.val === 2);
+            this.setState({catalog: sortFilterBrend});
+            this.props.handleChangeBrend(sortFilterBrend)
+        }
+        if (selectedOptionBrend.value === 3) {
+            const byFilterBrend = this.state.default.catalog;
+            const sortFilterBrend = byFilterBrend.filter((item) => item.brand.val === 3);
+            this.setState({catalog: sortFilterBrend});
+            this.props.handleChangeBrend(sortFilterBrend)
+        }
+        if (selectedOptionBrend.value === 4) {
+            const byFilterBrend = this.state.default.catalog;
+            const sortFilterBrend = byFilterBrend.filter((item) => item.brand.val === 4);
+            this.setState({catalog: sortFilterBrend});
+            this.props.handleChangeBrend(sortFilterBrend)
+        }
+        if (selectedOptionBrend.value === 5) {
+            const byFilterBrend = this.state.default.catalog;
+            const sortFilterBrend = byFilterBrend.filter((item) => item.brand.val === 5);
+            this.setState({catalog: sortFilterBrend});
+            this.props.handleChangeBrend(sortFilterBrend)
+        }
+        if (selectedOptionBrend.value === 6) {
+            const byFilterBrend = this.state.default.catalog;
+            const sortFilterBrend = byFilterBrend.filter((item) => item.brand.val === 6);
+            this.setState({catalog: sortFilterBrend});
+            this.props.handleChangeBrend(sortFilterBrend)
+        }
+        if (selectedOptionBrend.value === 7) {
+            const byFilterBrend = this.state.default.catalog;
+            const sortFilterBrend = byFilterBrend.filter((item) => item.brand.val === 7);
+            this.setState({catalog: sortFilterBrend});
+            this.props.handleChangeBrend(sortFilterBrend)
+        }
+        if (selectedOptionBrend.value === 8) {
+            const byFilterBrend = this.state.default.catalog;
+            const sortFilterBrend = byFilterBrend.filter((item) => item.brand.val === 8);
+            this.setState({catalog: sortFilterBrend});
+            this.props.handleChangeBrend(sortFilterBrend)
+        }
+        if (selectedOptionBrend.value === 9) {
+            const byFilterBrend = this.state.default.catalog;
+            const sortFilterBrend = byFilterBrend.filter((item) => item.brand.val === 9);
+            this.setState({catalog: sortFilterBrend});
+            this.props.handleChangeBrend(sortFilterBrend)
+        }
+        if (selectedOptionBrend.value === 10) {
+            const byRestBrendData = this.state.default.catalog;
+            this.setState({catalog: byRestBrendData});
+            this.props.handleChangeBrend(byRestBrendData)
+        }
     };
 
     render() {
-        const { selectedOption } = this.state;
+        const { selectedBrend } = this.state;
         return (
             <div className="filter">
                 <div className="container">
                     <p>Фильтр</p>
-                    <div className="icon">
-                        <Select
-                            value={selectedOption}
-                            onChange={this.handleChangeIcon}
-                            options={icon}
-                            defaultValue={{value: 2, label: 'Иконки'}}
-                        />
-                    </div>
+
                     <div className="brand">
                         <Select
-                            value={selectedOption}
+                            value={selectedBrend}
                             onChange={this.handleChangeBrend}
                             options={brand}
                             defaultValue={{value: 3, label: 'Бренд'}}

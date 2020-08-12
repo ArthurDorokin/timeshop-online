@@ -57,14 +57,11 @@ ul li a {
     align-items: center;
 }
 
-.filter .icon {
+.filter .brand {
     width: 150px;
     margin: 0 20px 0 20px;
 }
 
-.filter .brand {
-    width: 150px;
-}
 
 /*card item*/
 .content.in .blocks-internal-card{

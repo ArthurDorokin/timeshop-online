@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Switch, Route} from "react-router-dom";
+import {Switch, Route, BrowserRouter} from "react-router-dom";
 
 import Layout from "./components/layout/Layout";
 import Home from "./components/layout/Home";
@@ -11,9 +11,12 @@ import Zhenskie from "./components/pages/women";
 import Detskie from "./components/pages/children";
 import Aksessuary from "./components/pages/accessories";
 import Catalog from "./components/pages/catalog";
+import StoreContext from "./StoreContext";
+import {catalog} from "./constans";
 
 class App extends Component {
     state = {
+        catalog,
         offBanner: false
     }
 
@@ -28,9 +31,8 @@ class App extends Component {
 
     render() {
         return (
-            <Layout
-                offBanner={this.state.offBanner}
-            >
+            <StoreContext.Provider value={this.state.catalog}>
+                <Layout offBanner={this.state.offBanner}>
                 <Switch>
                     <Route exact path="/" render={(props) => <Home />}/>
                     {/*pages*/}
@@ -43,6 +45,7 @@ class App extends Component {
                     <Route exact path='*' render={(props) => <NotFound callback={this.onChildDidMount}/>}/>
                 </Switch>
             </Layout>
+            </StoreContext.Provider>
         );
     }
 }

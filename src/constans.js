@@ -12,6 +12,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Хит", classFilter: "hit", val: 0},
+        brand: {name: "", val: 1},
         typeProduct: 1
     },
     {
@@ -27,6 +28,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Хит", classFilter: "hit", val: 0},
+        brand: {name: "", val: 9},
         typeProduct: 2
     },
     {
@@ -42,6 +44,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Хит", classFilter: "hit", val: 0},
+        brand: {name: "", val: 8},
         typeProduct: 1
     },
     {
@@ -57,6 +60,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Хит", classFilter: "hit", val: 0},
+        brand: {name: "", val: 2},
         typeProduct: 1
     },
     {
@@ -72,6 +76,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Хит", classFilter: "hit", val: 0},
+        brand: {name: "", val: 0},
         typeProduct: 1
     },
     {
@@ -87,6 +92,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Хит", classFilter: "hit", val: 0},
+        brand: {name: "", val: 0},
         typeProduct: 0
     },
     {
@@ -102,11 +108,9 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Хит", classFilter: "hit", val: 0},
+        brand: {name: "", val: 3},
         typeProduct: 0
     },
-
-
-
     {
         id: 7,
         link: "/",
@@ -120,6 +124,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        brand: {name: "", val: 0},
         typeProduct: 1
     },
     {
@@ -135,6 +140,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        brand: {name: "", val: 4},
         typeProduct: 1
     },
     {
@@ -150,6 +156,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        brand: {name: "", val: 4},
         typeProduct: 1
     },
     {
@@ -165,6 +172,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        brand: {name: "", val: 7},
         typeProduct: 1
     },
     {
@@ -180,6 +188,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        brand: {name: "", val: 0},
         typeProduct: 1
     },
     {
@@ -195,6 +204,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        brand: {name: "", val: 5},
         typeProduct: 1
     },
     {
@@ -210,6 +220,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Хит", classFilter: "hit", val: 0},
+        brand: {name: "", val: 6},
         typeProduct: 3
     },
     {
@@ -225,6 +236,7 @@ const catalog = [
         buy: "Купить",
         inBasket: "В корзине",
         filterIcon: {name: "Новинка", classFilter: "new", val: 1},
+        brand: {name: "", val: 6},
         typeProduct: 3
     },
 ]
