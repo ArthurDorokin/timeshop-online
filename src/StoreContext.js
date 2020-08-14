@@ -1,5 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
+import {catalog} from "./constans";
 
-const StoreContext = React.createContext(null);
+export const DataContext = React.createContext(null);
 
-export default StoreContext;
+export class DataProvider extends Component {
+
+    state = {
+        catalog
+    }
+
+    render() {
+        const {catalog} = this.state;
+
+        return(
+            <DataContext.Provider value={{catalog}}>
+                {this.props.children}
+            </DataContext.Provider>
+        )
+    }
+
+}
