@@ -20,7 +20,7 @@ class Content extends Component {
                     <div className="wrap-hit wrap-internal-card">
                         <h2>Хиты продаж</h2>
                         <div className="blocks-hit blocks-internal-card">
-                            <Hit catalog={catalog}/>
+                            <Hit catalog={catalog} takeGoods={this.props.takeGoods}/>
                         </div>
                     </div>
                     <div className="wrap-men-or-she">

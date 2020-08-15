@@ -11,9 +11,8 @@ import Zhenskie from "./components/pages/women";
 import Detskie from "./components/pages/children";
 import Aksessuary from "./components/pages/accessories";
 import Catalog from "./components/pages/catalog";
-import StoreContext from "./StoreContext";
-import {catalog} from "./constans";
 import {DataProvider} from "./StoreContext";
+import Details from "./components/pages/details";
 
 class App extends Component {
     state = {
@@ -30,12 +29,6 @@ class App extends Component {
         }
     };
 
-    takeGoods = (id) => {
-        const catalog = this.state.catalog;
-        const result = catalog.filter(item => item.id === id);
-        const [card] = result;
-        console.log([card])
-    }
 
     render() {
         return (
@@ -49,6 +42,8 @@ class App extends Component {
                         <Route exact path="/detskie" render={(props) => <Detskie/>}/>
                         <Route exact path="/aksessuary" render={(props) => <Aksessuary/>}/>
                         <Route exact path="/catalog" render={(props) => <Catalog/>}/>
+
+                        <Route path='/product/:id' component={Details}/>
                         {/*404*/}
                         <Route exact path='*' render={(props) => <NotFound callback={this.onChildDidMount}/>}/>
                     </Switch>

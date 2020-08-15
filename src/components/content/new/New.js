@@ -16,7 +16,7 @@ export const New = ({catalog}) => {
             {catalog.filter((item) => item.filterIcon.val === 1).map((item) =>
                 <div className="new-item internal-card-item" key={item.id}>
                     <div className="new-blocks _card-item">
-                        <NavLink to={item.link}>
+                        <NavLink to={`/product/${item.id}`}>
                             <img src={item.img} alt={item.alt}/>
                             <span className="flag-new">{item.filterIcon.name}</span>
                             <p className="description">{item.description}</p>
