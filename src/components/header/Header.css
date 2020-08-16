@@ -9,15 +9,18 @@
     justify-content: space-between;
     margin: 0 auto;
 }
+
 .header .container .logo img {
     width: 250px;
 }
+
 .header .container .wrap {
     display: flex;
     align-items: center;
     width: 55%;
     justify-content: space-between;
 }
+
 .header .navigation ul {
     display: flex;
     align-items: center;
@@ -30,22 +33,31 @@
     font-weight: 700;
 }
 
+.header .basket a {
+    color: #000000;
+    text-decoration: none;
+}
+
 .header .basket ul {
     display: flex;
     align-items: center;
     padding: 0;
     justify-content: space-between;
 }
+
 .header .basket ul li:nth-of-type(2) {
     margin: 4px 0 0 0;
     font-weight: 700;
 }
+
 .header .basket {
     width: 10%;
 }
+
 .header .basket .img {
     position: relative;
 }
+
 .header .basket .count-num {
     position: absolute;
     font-size: 16px;
@@ -58,6 +70,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .header .basket .img img {
     width: 30px;
 }

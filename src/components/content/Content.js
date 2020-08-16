@@ -14,7 +14,7 @@ class Content extends Component {
 
     render() {
 
-        const {catalog} = this.context;
+        const {catalog, addCart} = this.context;
 
         return (
             <div className="content">
@@ -22,7 +22,7 @@ class Content extends Component {
                     <div className="wrap-hit wrap-internal-card">
                         <h2>Хиты продаж</h2>
                         <div className="blocks-hit blocks-internal-card">
-                            <Hit catalog={catalog}/>
+                            <Hit catalog={catalog} addCart={addCart}/>
                         </div>
                     </div>
                     <div className="wrap-men-or-she">

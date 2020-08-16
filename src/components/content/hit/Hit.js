@@ -2,7 +2,7 @@ import React from "react";
 import {NavLink} from "react-router-dom"
 import Slider from "react-slick";
 
-export const Hit = ({catalog, takeGoods}) => {
+export const Hit = ({catalog, addCart}) => {
     const settings = {
         dots: false,
         infinite: false,
@@ -24,7 +24,7 @@ export const Hit = ({catalog, takeGoods}) => {
                             <p className="price">{item.price} грн</p>
                         </NavLink>
                     </div>
-                    <div className="btn-price">{item.buy}</div>
+                    <div className="btn-price" onClick={() => addCart(item.id)}>{item.buy}</div>
                 </div>
             )}
         </Slider>

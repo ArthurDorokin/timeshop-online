@@ -41,7 +41,7 @@ class Details extends Component {
                                 <div className="info">{item.info}</div>
                                 <div className="sum">{item.price} грн</div>
                                 <div className="buy">
-                                    <NavLink to="/cart">{item.buy}</NavLink>
+                                    <NavLink to="/cart" onClick={() => this.context.addCart(item.id)}>{item.buy}</NavLink>
                                 </div>
                             </div>
                         </div>

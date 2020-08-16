@@ -40,7 +40,7 @@ class Zhenskie extends Component {
                                                 <p className="price">{item.price} грн</p>
                                             </NavLink>
                                         </div>
-                                        <div className="btn-price">{item.buy}</div>
+                                        <div className="btn-price" onClick={() => this.context.addCart(item.id)}>{item.buy}</div>
                                     </div>
                                 )}
                             </div>

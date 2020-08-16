@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Switch, Route, BrowserRouter} from "react-router-dom";
+import {Switch, Route} from "react-router-dom";
 
 import Layout from "./components/layout/Layout";
 import Home from "./components/layout/Home";
@@ -13,10 +13,11 @@ import Aksessuary from "./components/pages/accessories";
 import Catalog from "./components/pages/catalog";
 import {DataProvider} from "./StoreContext";
 import Details from "./components/pages/details";
+import Cart from "./components/pages/cart";
+import Payment from "./components/pages/payment";
 
 class App extends Component {
     state = {
-        //catalog,
         offBanner: false
     }
 
@@ -42,8 +43,9 @@ class App extends Component {
                         <Route exact path="/detskie" render={(props) => <Detskie/>}/>
                         <Route exact path="/aksessuary" render={(props) => <Aksessuary/>}/>
                         <Route exact path="/catalog" render={(props) => <Catalog/>}/>
-
                         <Route path='/product/:id' component={Details}/>
+                        <Route path='/cart' component={Cart}/>
+                        <Route path='/payment' component={Payment}/>
                         {/*404*/}
                         <Route exact path='*' render={(props) => <NotFound callback={this.onChildDidMount}/>}/>
                     </Switch>

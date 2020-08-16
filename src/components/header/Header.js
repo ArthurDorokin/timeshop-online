@@ -1,9 +1,14 @@
 import React, {Component} from "react";
 import {NavLink} from "react-router-dom";
+import {DataContext} from "../../StoreContext";
 import './Header.css'
 
 class Header extends Component {
+
+    static contextType = DataContext;
+
     render() {
+        const {cart} = this.context;
         return (
             <div className="header">
                 <div className="container">
@@ -21,13 +26,15 @@ class Header extends Component {
                         </div>
                     </div>
                     <div className="basket">
-                        <ul>
-                            <li className="img">
-                                <span className="count-num">0</span>
-                                <img src="../img/vippng.com-luggage-icon-png-2246050.png" alt=""/>
-                            </li>
-                            <li>Мой заказ</li>
-                        </ul>
+                        <NavLink to="/cart">
+                            <ul>
+                                <li className="img">
+                                    <span className="count-num">{cart.length}</span>
+                                    <img src="../img/vippng.com-luggage-icon-png-2246050.png" alt=""/>
+                                </li>
+                                <li>Мой заказ</li>
+                            </ul>
+                        </NavLink>
                     </div>
                 </div>
             </div>
