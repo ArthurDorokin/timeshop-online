@@ -24,8 +24,7 @@ export const Hit = ({catalog, takeGoods}) => {
                             <p className="price">{item.price} грн</p>
                         </NavLink>
                     </div>
-                    {/*<div className="btn-price">{item.buy}</div>*/}
-                    <div className="btn-price" onClick={() => takeGoods(item.id)}>{item.buy}</div>
+                    <div className="btn-price">{item.buy}</div>
                 </div>
             )}
         </Slider>

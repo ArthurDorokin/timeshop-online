@@ -1,11 +1,14 @@
 import React, {Component} from "react";
 import './Detskie.css'
-import StoreContext from "../../../StoreContext";
+import {DataContext} from "../../../StoreContext";
 import {NavLink} from "react-router-dom";
 import Filter from "../filter";
 import {catalog} from "../../../constans";
 
 class Detskie extends Component {
+
+    static contextType = DataContext;
+
     state = {
         catalog
     }
@@ -15,6 +18,9 @@ class Detskie extends Component {
     };
 
     render() {
+
+        const {catalog} = this.state;
+
         return (
             <div className="content in">
                 <div className="block-detskie">
@@ -24,10 +30,10 @@ class Detskie extends Component {
                         <div className="wrap-detskie wrap-internal-card">
                             <Filter handleChangeBrend={this.handleChangeBrend}/>
                             <div className="blocks-detskie blocks-internal-card">
-                                {this.state.catalog.filter((item) => item.typeProduct === 2).map((item) =>
+                                {catalog.filter((item) => item.typeProduct === 2).map((item) =>
                                     <div className="detskie-item internal-card-item" key={item.id}>
                                         <div className="detskie-blocks _card-item">
-                                            <NavLink to={item.link}>
+                                            <NavLink to={`/product/${item.id}`}>
                                                 <img src={item.img} alt={item.alt}/>
                                                 <span className="flag">{item.filterIcon.name}</span>
                                                 <p className="description">{item.description}</p>

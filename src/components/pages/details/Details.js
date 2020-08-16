@@ -27,7 +27,6 @@ class Details extends Component {
 
     render() {
         const {catalog} = this.state;
-        console.log(catalog)
 
         return (
             <div className="details">

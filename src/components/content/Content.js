@@ -13,14 +13,16 @@ class Content extends Component {
     static contextType = DataContext;
 
     render() {
+
         const {catalog} = this.context;
+
         return (
             <div className="content">
                 <div className="container">
                     <div className="wrap-hit wrap-internal-card">
                         <h2>Хиты продаж</h2>
                         <div className="blocks-hit blocks-internal-card">
-                            <Hit catalog={catalog} takeGoods={this.props.takeGoods}/>
+                            <Hit catalog={catalog}/>
                         </div>
                     </div>
                     <div className="wrap-men-or-she">
