@@ -15,6 +15,7 @@
     transition: .5s;
     margin: 10px 0 20px 0;
     padding: 20px 15px;
+    outline: none;
 }
 
 .slick-initialized .slick-slide {

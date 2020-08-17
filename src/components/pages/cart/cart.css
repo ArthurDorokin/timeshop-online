@@ -1,0 +1,116 @@
+.wrap-details {
+    box-shadow: rgba(59, 55, 43, 0.25) 0 7px 15px;
+    border-radius: 4px 4px 0 0;
+    padding: 10px;
+    margin: 50px 0 50px 0;
+}
+
+.wrap-details .details-item {
+    border: 1px solid rgba(0, 0, 0, .2);
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px 0;
+    padding: 15px 0;
+}
+
+.wrap-details .details-item .img {
+    width: 250px;
+    height: 250px;
+    margin: 0 0 0 10%;
+}
+
+.wrap-details .details-item .infoProduct {
+    margin: 0 0 0 20%;
+}
+
+.wrap-details .details-item .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.delete span:nth-of-type(1) {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: #e42b2b;
+    top: -1px;
+    right: 7px;
+    transform: rotate(45deg);
+}
+
+.delete span:nth-of-type(2) {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: #e42b2b;
+    top: -1px;
+    right: 7px;
+    transform: rotate(-45deg);
+}
+
+.wrap-details .details-item .sum {
+    margin: 15px 0;
+}
+
+.wrap-details .details-item .count {
+    border: 1px solid rgba(0, 0, 0, .2);
+    background: none;
+    width: 45px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.wrap-details .details-item .amount span {
+    display: inline-block;
+    margin: 0 15px 0 15px;
+    font-size: 14px;
+}
+.wrap-details .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrap-details .total a {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap-details .total h3 {
+    color: #cd0404;
+}
+.wrap-details .total h3 span{
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cart {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    flex-shrink: 0;
+    margin: 0;
+}

@@ -7,7 +7,9 @@ body {
 .bannerAll.off-banner {
     display: none;
 }
-
+main {
+    padding: 99px 0 0 0;
+}
 body .container {
     width: 1425px;
     margin: 0 auto;
@@ -43,6 +45,7 @@ ul li a {
 
 .aboutCompany {
     text-align: center;
+    margin: 0 0 150px 0;
 }
 
 .aboutCompany p {
@@ -96,3 +99,24 @@ ul li a {
     position: absolute;
 }
 /*card item*/
+
+@media (max-width: 1367px) {
+    body .container {
+        width: 1300px;
+    }
+    .wrap-menOrShe .men {
+        width: 100%;
+    }
+    .wrap-menOrShe .men img{
+        width: 100%;
+    }
+    .wrap-menOrShe .she {
+        width: 100%;
+    }
+    .wrap-menOrShe .she img{
+        width: 100%;
+    }
+    .content.in img {
+        width: 100%;
+    }
+}

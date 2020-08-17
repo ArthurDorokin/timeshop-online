@@ -2,13 +2,21 @@ import React from "react";
 import Slider from "react-slick";
 import {NavLink} from "react-router-dom";
 
-export const New = ({catalog}) => {
+export const New = ({catalog, addCart}) => {
     const settings = {
         dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            }]
     }
 
     return (
@@ -23,7 +31,7 @@ export const New = ({catalog}) => {
                             <p className="price">{item.price} грн</p>
                         </NavLink>
                     </div>
-                    <div className="btn-price">{item.buy}</div>
+                    <div className="btn-price" onClick={() => addCart(item.id)}>{item.buy}</div>
                 </div>
             )}
         </Slider>

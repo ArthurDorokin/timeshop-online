@@ -8,7 +8,15 @@ export const Hit = ({catalog, addCart}) => {
         infinite: false,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            }]
     }
 
     return (

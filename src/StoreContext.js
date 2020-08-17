@@ -88,6 +88,7 @@ export class DataProvider extends Component {
 
     render() {
         const {catalog, cart, total} = this.state;
+        console.log(catalog);
         const {addCart, reduction, increase, removeProduct, getTotal} = this;
         return (
             <DataContext.Provider value={{catalog, addCart, cart, reduction, increase, removeProduct, total, getTotal}}>

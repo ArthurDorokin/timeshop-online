@@ -26,7 +26,7 @@ class Aksessuary extends Component {
                 <div className="block-aksessuary">
                     <div className="container">
                         <h1>Аксессуары</h1>
-                        <img src="../img/aksessuary.jpg" alt="aksessuary"/>
+                        <img className="pages-img" src="../img/aksessuary.jpg" alt="aksessuary"/>
                         <div className="wrap-aksessuary wrap-internal-card">
                             <Filter handleChangeBrend={this.handleChangeBrend}/>
                             <div className="blocks-aksessuary blocks-internal-card">

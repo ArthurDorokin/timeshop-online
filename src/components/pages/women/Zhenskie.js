@@ -26,7 +26,7 @@ class Zhenskie extends Component {
                 <div className="block-zhenskie">
                     <div className="container">
                         <h1>Женские</h1>
-                        <img src="../img/zhenskie.jpg" alt="zhenskie"/>
+                        <img className="pages-img" src="../img/zhenskie.jpg" alt="zhenskie"/>
                         <div className="wrap-zhenskie wrap-internal-card">
                             <Filter handleChangeBrend={this.handleChangeBrend}/>
                             <div className="blocks-zhenskie blocks-internal-card">

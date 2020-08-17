@@ -5,7 +5,9 @@ class Payment extends Component {
     render() {
         return (
             <div className="payment">
-                Payment
+                <div className="container">
+                    Payment
+                </div>
             </div>
         )
     }

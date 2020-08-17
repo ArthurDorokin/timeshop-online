@@ -31,7 +31,7 @@ class Content extends Component {
                     <div className="wrap-new wrap-internal-card">
                         <h2>Новинки</h2>
                         <div className="blocks-new blocks-internal-card">
-                            <New catalog={catalog}/>
+                            <New catalog={catalog} addCart={addCart}/>
                         </div>
                     </div>
                     <AboutCompany/>

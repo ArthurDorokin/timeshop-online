@@ -26,7 +26,7 @@ class Muzhskie extends Component {
                 <div className="block-muzhskie">
                     <div className="container">
                         <h1>Мужские</h1>
-                        <img src="../img/muzhskie.jpg" alt="muzhskie"/>
+                        <img className="pages-img" src="../img/muzhskie.jpg" alt="muzhskie"/>
                         <div className="wrap-muzhskie wrap-internal-card">
                             <Filter handleChangeBrend={this.handleChangeBrend}/>
                             <div className="blocks-muzhskie blocks-internal-card">

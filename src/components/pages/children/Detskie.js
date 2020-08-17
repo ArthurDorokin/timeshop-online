@@ -26,7 +26,7 @@ class Detskie extends Component {
                 <div className="block-detskie">
                     <div className="container">
                         <h1>Мужские</h1>
-                        <img src="../img/detskie.jpg" alt="detskie"/>
+                        <img className="pages-img" src="../img/detskie.jpg" alt="detskie"/>
                         <div className="wrap-detskie wrap-internal-card">
                             <Filter handleChangeBrend={this.handleChangeBrend}/>
                             <div className="blocks-detskie blocks-internal-card">
